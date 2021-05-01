@@ -1,0 +1,257 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body{
+ background-color: cornsilk;
+}
+/*navbar*/
+.navbar{
+ position: relative;
+ background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),
+ url(./img/shoe-2.png);
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ width: 100vw;
+ height: 116vh;
+ background-attachment: fixed;
+}
+.navbar-container{
+ position: absolute;
+ left: 6%;
+ top: 30%;
+color: snow;
+text-align: center;
+width: 90vw;
+margin: 0 auto;
+}
+.header{
+ font-weight: bold;
+ font-size:20px;
+ padding: 10px 0;
+ text-align: center;
+ animation: Move 5s 2;
+}
+@keyframes Move{
+  1%{
+    transform: translateX(0);
+  }
+  20%{
+    transform: translateX(100%);
+  }
+  70%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+
+.navbar-container p{
+ padding: 20px 0;
+ text-align: center;
+ animation: Move-p 5s 2; 
+}
+@keyframes Move-p{
+  1%{
+    transform: translateX(0);
+  }
+  20%{
+    transform: translateX(-100%);
+  }
+  70%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+
+.navbar-container button{
+ padding: 10px 15px;
+ 
+ font-weight: bold;
+ font-size: 20px;
+ background-color: transparent;
+ border-radius: 5%;
+ color:  antiquewhite;
+ transition: transform 0.5s;
+}
+.navbar-container button:hover{
+ transform: scale(1.2);
+}
+/*end of navbar*/
+/*Featured products*/
+.featured{
+ background-color: whitesmoke;
+ overflow: hidden;
+position: relative;
+}
+
+.featured h1{
+ text-align: center;
+ padding: 100px 0 20px 0;
+ font-size: 40px;
+ color: rgba(0, 0, 0, 0.8);
+ font-weight: bold;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+.first img{
+ padding: 10%;
+}
+.shoe-featured{
+ background-color: rgb(109, 131, 230);
+ border-radius: 50%;
+ height: 150px;
+ width: 150px;
+ margin:70px auto;
+ position: relative;
+ transition: transform 1s;
+}
+.shoe img{
+ display: block;
+ height: 200px;
+ width: 200px;
+ position: absolute;
+ left: -10%;
+ bottom: -10%;
+}
+.shoe-featured:hover{
+ transform: scale(1.3);
+}
+@media screen and (min-width:576px){
+ .shoe{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+ }
+ .third{
+  grid-column: 1/3;
+ }
+}
+@media screen and (min-width:850px){
+ .shoe{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+ }
+ .third{
+  grid-column: 3/4;
+  grid-row: 1/2;
+ }
+}
+
+
+
+.products h1{
+ text-align: center;
+ margin-top: 100px;
+ font-size: 45px;
+}
+
+
+
+
+
+.products-1{
+ background-color: darkcyan;
+ width: 80vw;
+ margin: 50px auto;
+ height:100vh;
+ border-radius: 10%;
+ color: white;
+}
+.products-2{
+ background-color: burlywood;
+ width: 80vw;
+ margin: 50px auto;
+ height:100vh;
+ border-radius: 10%;
+ color: white;
+}
+.products-3{
+ background-color: cornflowerblue;
+ width: 80vw;
+ margin: 50px auto;
+ height:100vh;
+ border-radius: 10%;
+ color: white;
+}
+.products-container{
+ text-align: center;
+ box-sizing: border-box;
+}
+.products-container img{
+ height: 300px;
+ width: 300px;
+}
+.products-container h1{
+ width: 50vw;
+ margin: 0 auto;
+ font-size: 6vw;
+}
+.products-container p{
+ color: black;
+ padding: 30px;
+}
+.products-container button{
+ padding:10px 20px;
+ border-radius: 10%;
+ color: white;
+ font-size: 25px;
+ background-color: turquoise;
+ border-color: turquoise;
+ transition: transform 1s;
+}
+.products-container button:hover{
+ transform: scale(1.2);
+}
+@media screen and (min-width:700px){
+ .products-container{
+  width:80vw;
+  height: 80vh;
+  position: relative;
+  border-radius: 5%;
+ }
+ .products-container img{
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  height: initial;
+  width: 40vw;
+ }
+ .para{
+  margin: 0 auto;
+ }
+ .para h1{
+  position: absolute;
+  right: 0;
+  padding: 30px 0;
+text-align:initial;
+ }
+ .para button{
+  position: absolute;
+  right: 6rem;
+  bottom: 4rem;
+
+ }
+ .para p{
+  position: absolute;
+  right: 0;
+  bottom: 10rem;
+  width: 40vw;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 20px;
+  text-align: right;
+ }
+ .products-container h1{
+   font-size: 4vw;
+ }
+}
+
+
+
+/*End of Featured products*/
+
